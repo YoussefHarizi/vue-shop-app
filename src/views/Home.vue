@@ -1,13 +1,20 @@
 <template>
-  <div class="home"></div>
+  <div class="home">
+    <Navbar></Navbar>
+    <face></face>
+    <products></products>
+  </div>
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from "@/components/HelloWorld.vue";
+import face from "@/components/interface.vue";
+import products from "@/sections/products.vue";
 
 export default {
   name: "home",
-  components: {}
+  components: {
+    face,
+    products
+  }
 };
 </script>

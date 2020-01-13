@@ -14,7 +14,7 @@
         </div>
         <div class="col-md-7">
           <div class="graphic">
-            <img src="/img/svg/graphic.svg" alt />
+            <img src="/img/svg/graphic.svg" alt="shop" />
           </div>
         </div>
       </div>
@@ -33,5 +33,9 @@ export default {
   width: 100%;
   height: 500px;
   text-align: left;
+}
+.graphic img{
+  width: 100%;
+  height: 100%;
 }
 </style>

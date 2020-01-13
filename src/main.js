@@ -2,8 +2,9 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-import jQuery from "jquery";
-window.$ = window.jQuery = jQuery;
+import JQuery from "jquery";
+window.$ = require("jquery");
+window.JQuery = require("jquery");
 import "popper.js";
 import "bootstrap";
 import "@fortawesome/fontawesome-free/css/all.css";
@@ -18,5 +19,6 @@ Vue.component("Navbar", require("./components/Navbar.vue").default);
 new Vue({
   router,
   store,
+  JQuery,
   render: h => h(App)
 }).$mount("#app");
